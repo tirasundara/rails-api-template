@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  # /ping end-point for health-check
+  get "/ping", to: "ping#ping"
 end
